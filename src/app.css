@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -37,7 +37,9 @@ ul {
 }
 
 img {
-  width: 100%;
+  /* width: 100%; */
+  width: 300px;
+  height: 200px;
 }
 
 /* Utilities */
@@ -62,7 +64,7 @@ img {
 }
 
 .lead {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -388,6 +390,11 @@ table th {
   .grid-3,
   .grid-4 {
     grid-template-columns: 3fr;
+  }
+
+  img{
+    width: 100%;
+    height: inherit;
   }
 
   /* Text Styles */
