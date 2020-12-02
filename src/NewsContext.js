@@ -9,9 +9,13 @@ export const NewsContextProvider = (props) => {
 
   useEffect(() => {
     const topic = "cryptoCurrency";
+    let today = new Date().toISOString().slice(0, 10)
+
+console.log(today);
+
     axios
       .get(
-        `http://newsapi.org/v2/everything?q=${topic}&language=en&from=2020-11-03&sortBy=publishedAt&apiKey=${apiKey}`
+        `http://newsapi.org/v2/everything?q=${topic}&language=en&from=${today}&sortBy=publishedAt&apiKey=${apiKey}`
       )
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));

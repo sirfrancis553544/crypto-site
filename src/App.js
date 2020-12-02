@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
-import { Content } from "../src/darkmode/components/Content";
+import { NavBar } from "../src/navBar/NavBar";
 
 import { useDarkMode } from "../src/darkmode/style/useDarkMode";
 import { Toggle } from "../src/darkmode/components/Toggle";
@@ -22,7 +22,9 @@ function App() {
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
   return (
-    <NewsContextProvider>
+    <>
+      <NavBar />
+      <NewsContextProvider>
       <ThemeProvider theme={themeMode}> 
       <GlobalStyles />
       <Toggle theme={theme} toggleTheme={toggleTheme} />
@@ -30,6 +32,8 @@ function App() {
       </ThemeProvider>
         
     </NewsContextProvider>
+    </>
+    
   );
 }
 

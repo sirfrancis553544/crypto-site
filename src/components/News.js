@@ -9,7 +9,7 @@ function News(props) {
 
   return (
     <div className="container">
-      <h1 className="text-center">Crypto News</h1>
+      <h1 className="text-center py-2">Crypto News</h1>
       <div className="grid-3">
         {data
           ? data.articles.map((news) => (
