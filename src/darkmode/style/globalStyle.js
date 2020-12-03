@@ -12,10 +12,10 @@ body, a{
 `;
 export const lightTheme = {
   body: "#f4f4f4",
-  text: "#333333",
+  text: "#fffff",
 };
 
 export const darkTheme = {
-  body: "#333333",
+  body: "#151618",
   text: "#f4f4f4",
 };

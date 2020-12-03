@@ -20,5 +20,5 @@ function News(props) {
     </div>
   );
 }
-
+// ! if the loader was made somewhere else then imported it might center 
 export default News;
