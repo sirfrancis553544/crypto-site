@@ -11,6 +11,8 @@ export const NavBar = () => {
         <ul className="navbar">News</ul>
       </div>
       <div className="line"></div>
+
+
     </>
   );
 };

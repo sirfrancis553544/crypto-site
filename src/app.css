@@ -47,7 +47,7 @@ img {
   max-width: 1100px;
   margin: auto;
   overflow: hidden;
-  padding: 0 2rem;
+  padding: 0px 2rem; /* it was 0px 2rem*/
 
 }
 
@@ -445,3 +445,5 @@ table th {
     grid-template-columns: 1fr;
   }
 }
+
+

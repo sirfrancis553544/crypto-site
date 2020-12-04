@@ -5,8 +5,8 @@ let Sun, Moon;
 
 Sun = Moon = styled.svg`
   position: absolute;
-  top: 2rem;
-  right: 4rem;
+  top: 1.5rem;
+  right: 6rem;
   transition: all .5s linear;
 `;
 
